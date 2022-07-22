@@ -1,0 +1,54 @@
+// -FONT SIZE SYSTEM (PX):=10/12/14/16/18/20/24/30/36/40/44/52/62/74/86/98
+
+// -FONT WEIGHT SYSTEM (PX):
+// =Default:400
+// =Medium:500
+// =Semi-bold:600
+// =Bold:700 
+
+// -Line Heights
+// =Default:1
+// =Small:1.05
+// =Medium:1.2
+// =Paragraph default:1.6 
+
+// -Letter Spacing 
+// =0.5px 
+// =0.75px 
+
+// -LINE HEIGHT
+// =Default:1 
+
+
+
+// Font size 
+$fontSize_heading: 4rem;
+
+//Letter Space
+
+$letterSpace_normal: 1.05px;
+$letterSpace_medium: 1.09px;
+$letterSpace_big: 1.1px;
+
+// Line Height
+$lineHeight_small: 1.05;
+$lineHeight_medium: 1.2;
+
+
+// Font weight
+$fontWeight_small: 400;
+$fontWeight_medium: 500;
+$fontWeight_big: 600;
+
+// Colors
+
+$color_primary: #cfb578;
+$color_heading: #14303a;
+$color_secondary_heading: #666666;
+$color_subheading: #777777;
+$color_footer: #1b212e;
+$color_fonts: #14303a;
+
+// Button Color 
+$color_button_initial: #cfb579;
+$color_button_hover: #d8b25a;

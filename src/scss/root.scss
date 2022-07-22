@@ -1,0 +1,16 @@
+@import './partials/reset';
+@import './partials/variable';
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1140px;
+    // background: rgb(218, 218, 218);
+    margin: auto;
+}

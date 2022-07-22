@@ -1,0 +1,18 @@
+@import '../root';
+
+.button {
+    padding: 13px;
+    border: none;
+    outline: none;
+    background: $color_button_initial;
+    border-radius: 1px;
+    cursor: pointer;
+    color: #ffff;
+    font-weight: bold;
+    width: 140px;
+
+    &:hover {
+        background: $color_button_hover;
+        transition: all .5s ease-out;
+    }
+}
