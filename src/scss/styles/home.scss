@@ -60,3 +60,84 @@
         }
     }
 }
+
+.section_team {
+    margin-top: 130px;
+    height: 100vh;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../images/team_man.webp);
+        height: 85%;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 2545;
+    }
+
+    &::after {
+        content: "";
+        background-color: $color_background;
+        height: 80%;
+        width: 60%;
+        position: absolute;
+        right: 0;
+        top: 100px;
+    }
+
+    &_content {
+        position: absolute;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        z-index: 10000;
+        justify-content: space-between;
+        align-items: center;
+        justify-self: flex-start;
+    }
+
+    &_img {
+        width: 50%;
+
+    }
+
+    &_text {
+        width: 28%;
+        margin-left: 100px;
+
+        &_heading {
+            font-size: 4rem;
+            color: $color_heading;
+        }
+
+        &_paragraph {
+            font-size: 1.4rem;
+            color: $color_subheading;
+            margin: 25px 0;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        li {
+            list-style: none;
+            font-size: 1.4rem;
+            color: $color_subheading;
+            margin-top: 10px;
+        }
+
+
+
+    }
+
+
+    &_bgImage {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
