@@ -1,5 +1,6 @@
 @import '../root.scss';
 
+// section hero
 .section_hero {
     height: 85vh;
     display: flex;
@@ -30,7 +31,7 @@
         &-left {
             position: absolute;
             width: 45%;
-            margin-top: -100px;
+            margin-top: -120px;
 
 
             .heading {
@@ -42,7 +43,7 @@
                 &_primary {
                     font-size: 5rem;
                     color: $color_heading;
-                    line-height: $lineHeight_medium;
+                    line-height: $lineHeight_big;
                     margin: 15px 0px;
                 }
 
@@ -61,10 +62,12 @@
     }
 }
 
+// section team
 .section_team {
     margin-top: 130px;
     height: 100vh;
     position: relative;
+    z-index: 1444;
 
     &::before {
         content: "";
@@ -74,14 +77,14 @@
         width: 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top;
         z-index: 2545;
     }
 
     &::after {
         content: "";
         background-color: $color_background;
-        height: 80%;
+        height: 85%;
         width: 60%;
         position: absolute;
         right: 0;
@@ -109,7 +112,7 @@
         margin-left: 100px;
 
         &_heading {
-            font-size: 4rem;
+            font-size: $fontSize_subheading;
             color: $color_heading;
         }
 
@@ -128,16 +131,68 @@
             font-size: 1.4rem;
             color: $color_subheading;
             margin-top: 10px;
+
+        }
+
+        .icon {
+            color: #cfb578;
+            margin-right: 10px;
+            font-size: 22px;
         }
 
 
 
     }
 
-
     &_bgImage {
         position: absolute;
         right: 0;
         top: 0;
     }
+}
+
+// section passion
+
+.section_passion {
+    height: 100vh;
+    width: 100vw;
+    margin-top: -10%;
+    position: absolute;
+
+    .passion_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        background: url(../../images/passion_bg.png), rgba(29, 46, 74, 0.7);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        background-blend-mode: multiply;
+
+        .passion_content {
+            padding: 250px 0px;
+
+            .passion_heading {
+                color: $color_white;
+                font-size: $fontSize_subheading;
+                margin: 30px 0;
+            }
+
+            .passion_cards {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                grid-template-columns: repeat(4, 1fr);
+                column-gap: 10px;
+                row-gap: 10px;
+            }
+
+        }
+
+
+
+
+    }
+
 }

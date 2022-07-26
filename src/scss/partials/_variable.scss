@@ -22,10 +22,12 @@
 
 
 // Font size 
-$fontSize_heading: 4rem;
+$fontSize_heading: 5rem;
+$fontSize_subheading: 4rem;
+$fontSize_cardHeading: 2rem;
+$fontSize_paragraph: 1.4rem;
 
 //Letter Space
-
 $letterSpace_normal: 1.05px;
 $letterSpace_medium: 1.09px;
 $letterSpace_big: 1.1px;
@@ -33,6 +35,7 @@ $letterSpace_big: 1.1px;
 // Line Height
 $lineHeight_small: 1.05;
 $lineHeight_medium: 1.2;
+$lineHeight_big: 1.4;
 
 
 // Font weight
@@ -49,6 +52,9 @@ $color_subheading: #777777;
 $color_footer: #1b212e;
 $color_fonts: #14303a;
 $color_background: #f7f7f7;
+$color_white: #fff;
+$color_background_overlay: #1d2e4a;
+// $color_background: #edecec;
 // Button Color 
 $color_button_initial: #cfb579;
 $color_button_hover: #d8b25a;
