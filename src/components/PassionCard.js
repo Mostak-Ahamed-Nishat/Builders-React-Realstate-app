@@ -9,9 +9,13 @@ function PassionCard({ heading, paragraph, icon }) {
         <div className="card_content">
           <span>{icon}</span>
           <h4 className="card_heading">{heading}</h4>
-          <p className="card_paragraph">{paragraph}</p>
+          <div>
+            <p className="card_paragraph">{paragraph}</p>
+          </div>
         </div>
-        <ButtonNonBg />
+        <div>
+          <ButtonNonBg color="#fff" />
+        </div>
       </div>
     </>
   );

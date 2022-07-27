@@ -4,14 +4,14 @@
     font-weight: 500;
     position: relative;
     z-index: 1;
-    color: #fff;
+
 
     &::after {
         position: absolute;
         content: "";
-        height: 30px;
-        width: 30px;
-        background: #999999;
+        height: 35px;
+        width: 35px;
+        background: #777777;
         left: -15px;
         top: -7px;
         border-radius: 50%;

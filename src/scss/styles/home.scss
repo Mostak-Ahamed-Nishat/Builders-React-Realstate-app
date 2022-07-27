@@ -1,168 +1,163 @@
-@import '../root.scss';
+@import '../root';
 
 // section hero
-.section_hero {
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100vw;
-
-    &::after {
-        opacity: 0.7;
-        background-image: url(../../images/hero_image.webp);
-        position: absolute;
-        right: 0;
-        top: 0;
-        content: "";
-        width: 50%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .hero-content {
-        justify-content: space-between;
+.section_hero_wrapper {
+    .section_hero {
+        height: 85vh;
         display: flex;
-        flex-direction: row;
+        align-items: center;
         position: relative;
-        width: 100%;
+        width: 100vw;
 
-        &-left {
+        &::after {
+            content: "";
+            background-image: url(../../images/hero_image.webp);
             position: absolute;
-            width: 45%;
-            margin-top: -120px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            opacity: 0.7;
+        }
+
+        .hero-content {
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            width: 100%;
+
+            &-left {
+                position: absolute;
+                width: 45%;
+                margin-top: -120px;
 
 
-            .heading {
-                &_secondary {
-                    font-size: 1.4rem;
-                    color: $color_subheading;
+                .heading {
+                    &_secondary {
+                        font-size: 1.4rem;
+                        color: $color_subheading;
+                    }
+
+                    &_primary {
+                        font-size: 5rem;
+                        color: $color_heading;
+                        line-height: $lineHeight_big;
+                        margin: 15px 0px;
+                    }
+
+                    &_tertiary {
+                        font-size: 1.4rem;
+                        color: $color_subheading;
+                        font-weight: 400;
+                    }
+
                 }
 
-                &_primary {
-                    font-size: 5rem;
-                    color: $color_heading;
-                    line-height: $lineHeight_big;
-                    margin: 15px 0px;
+                .button_view {
+                    margin-top: 30px;
                 }
-
-                &_tertiary {
-                    font-size: 1.4rem;
-                    color: $color_subheading;
-                    font-weight: 400;
-                }
-
-            }
-
-            .button_view {
-                margin-top: 30px;
             }
         }
     }
 }
 
+
 // section team
-.section_team {
-    margin-top: 130px;
-    height: 100vh;
-    position: relative;
-    z-index: 1444;
 
-    &::before {
-        content: "";
-        position: absolute;
-        background-image: url(../../images/team_man.webp);
-        height: 85%;
-        width: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        z-index: 2545;
-    }
+.section_team_wrapper {
+    .section_team {
+        margin-top: 130px;
+        height: 100vh;
+        position: relative;
+        z-index: 1444;
 
-    &::after {
-        content: "";
-        background-color: $color_background;
-        height: 85%;
-        width: 60%;
-        position: absolute;
-        right: 0;
-        top: 100px;
-    }
-
-    &_content {
-        position: absolute;
-        display: flex;
-        height: 100%;
-        width: 100%;
-        z-index: 10000;
-        justify-content: space-between;
-        align-items: center;
-        justify-self: flex-start;
-    }
-
-    &_img {
-        width: 50%;
-
-    }
-
-    &_text {
-        width: 28%;
-        margin-left: 100px;
-
-        &_heading {
-            font-size: $fontSize_subheading;
-            color: $color_heading;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../../images/team_man.webp);
+            height: 85%;
+            width: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            z-index: 2545;
         }
 
-        &_paragraph {
-            font-size: 1.4rem;
-            color: $color_subheading;
-            margin: 25px 0;
+        &::after {
+            content: "";
+            background-color: $color_background;
+            height: 85%;
+            width: 60%;
+            position: absolute;
+            right: 0;
+            top: 100px;
         }
 
-        ul {
-            margin-bottom: 20px;
+        &_content {
+            position: absolute;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            z-index: 10000;
+            justify-content: space-between;
+            align-items: center;
+            justify-self: flex-start;
         }
 
-        li {
-            list-style: none;
-            font-size: 1.4rem;
-            color: $color_subheading;
-            margin-top: 10px;
-
+        &_img {
+            width: 50%;
         }
 
-        .icon {
-            color: #cfb578;
-            margin-right: 10px;
-            font-size: 22px;
+        &_text {
+            width: 28%;
+            margin-left: 100px;
+
+            &_heading {
+                font-size: $fontSize_subheading;
+                color: $color_heading;
+            }
+
+            &_paragraph {
+                font-size: 1.4rem;
+                color: $color_subheading;
+                margin: 25px 0;
+            }
+
+            ul {
+                margin-bottom: 20px;
+            }
+
+            li {
+                list-style: none;
+                font-size: 1.4rem;
+                color: $color_subheading;
+                margin-top: 10px;
+            }
+
+            .icon {
+                color: #cfb578;
+                margin-right: 10px;
+                font-size: 22px;
+            }
         }
 
-
-
-    }
-
-    &_bgImage {
-        position: absolute;
-        right: 0;
-        top: 0;
+        &_bgImage {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
     }
 }
 
 // section passion
-
-.section_passion {
-    height: 100vh;
-    width: 100vw;
-    margin-top: -10%;
-    position: absolute;
-
-    .passion_container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.section_passion_wrapper {
+    .section_passion {
+        height: 100vh;
+        width: 100vw;
+        margin-top: -10%;
         padding-top: 100px;
         background: url(../../images/passion_bg.png), rgba(29, 46, 74, 0.7);
         background-repeat: no-repeat;
@@ -170,16 +165,19 @@
         width: 100vw;
         background-blend-mode: multiply;
 
-        .passion_content {
-            padding: 250px 0px;
 
-            .passion_heading {
-                color: $color_white;
-                font-size: $fontSize_subheading;
-                margin: 30px 0;
+        .passion {
+            &_content {
+                padding: 150px 0px;
             }
 
-            .passion_cards {
+            &_heading {
+                padding: 30px 0px;
+                color: $color_white;
+                font-size: $fontSize_subheading;
+            }
+
+            &_cards {
                 display: grid;
                 justify-content: center;
                 align-items: center;
@@ -188,11 +186,94 @@
                 row-gap: 10px;
             }
 
+            &_card_logo {
+                font-size: 60px;
+                border: 1.5px solid #fff;
+                padding: 10px;
+                border-radius: 5px;
+            }
         }
 
+    }
+}
 
 
+// section apartment
+.section_apartment_wrapper {
+    padding-bottom: 50px;
 
+    .apartment_head_container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        align-items: center;
+
+        h2 {
+            font-size: 3.5rem;
+            color: $color_heading;
+        }
     }
 
+    .section_apartment {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+
+}
+
+// section customer review
+.ready_wrapper {
+    background: url('../../images/cta_bg.png'), rgba(0, 128, 160, .7);
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    background-blend-mode: multiply;
+
+    .ready_text_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 200px;
+
+        .ready {
+            &_title {
+                font-size: 4rem;
+            }
+
+            &_subtitle {
+                font-size: 14px;
+            }
+
+            &_title,
+            &_subtitle {
+                padding: 5px 0;
+                color: #fff;
+            }
+
+        }
+    }
+}
+
+// section customer review
+.section_customer {
+
+    padding-bottom: 50px;
+
+    .review_title {
+        padding-top: 80px;
+        font-size: 3.5rem;
+        color: $color_heading;
+        padding-bottom: 50px;
+    }
+
+    .review_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
 }

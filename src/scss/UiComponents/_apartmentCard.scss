@@ -1,0 +1,57 @@
+@import '../partials/variable';
+
+.apartment_card_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 362px;
+    // border: .2px solid #5555;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.10);
+
+    .card {
+        &_img {}
+
+        &_text {
+            padding: 30px;
+
+            .apartment_subheading {
+                font-size: 1.4rem;
+                color: $color_primary;
+            }
+
+            .apartment_heading {
+                font-size: 20px;
+                color: $color_heading;
+                padding: 8px 0;
+            }
+
+            .card_list {
+                padding-left: 0px;
+
+                ul {
+                    padding-top: 10px;
+
+                    .list {
+
+                        display: flex;
+                        justify-content: space-between;
+
+                        li {
+                            span {
+                                font-size: 18px;
+                                color: $color_subheading;
+                                padding-right: 5px;
+                            }
+
+                            display: inline;
+                            list-style: none;
+                            font-size: 1.6rem;
+                            color: $color_subheading;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

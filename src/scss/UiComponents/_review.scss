@@ -1,0 +1,31 @@
+@import '../partials/variable';
+
+.review {
+    max-width: 520px;
+
+    &_message {
+        padding-top: 10px;
+        font-size: 1.2rem;
+        color: $color_subheading;
+        font-style: italic;
+    }
+
+    .review_top {
+        display: flex;
+        align-items: center;
+
+        .top_head {
+            padding-left: 30px;
+
+            &_name {
+                font-size: 1.8rem;
+                color: $color_heading;
+            }
+
+            &_paragraph {
+                font-size: 1.4rem;
+                color: $color_subheading;
+            }
+        }
+    }
+}
