@@ -1,0 +1,49 @@
+@import "../partials/variable";
+
+.blog_container {
+    display: flex;
+    align-items: center;
+    width: 420px;
+
+    .smb {
+        &_type {
+            color: $color_primary;
+            font-weight: 400;
+            font-size: 14px;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        &_title {
+            color: $color_heading;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px;
+            text-transform: unset;
+        }
+
+        &_icon_box {
+            display: flex;
+            padding: 10px;
+            color: $color_subheading;
+            align-items: center;
+
+        }
+
+        &_icon {
+            display: flex;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        &_data {
+            margin-right: 15px;
+            font-size: 13px;
+        }
+    }
+
+
+
+
+
+}

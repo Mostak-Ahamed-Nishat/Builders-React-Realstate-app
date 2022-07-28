@@ -6,7 +6,7 @@ function Review({ img, name, jd, review }) {
     <>
       <div className="review">
         <div className="review_top">
-          <img src={img} />
+          <img src={img} alt="user reviewS" />
           <div className="top_head">
             <h6 className="top_head_name">{name}</h6>
             <p className="top_head_paragraph">{jd}</p>

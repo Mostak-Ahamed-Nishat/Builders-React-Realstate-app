@@ -1,0 +1,70 @@
+@import '../partials/variable';
+
+.section_footer {
+    background: $color_footer;
+    padding: 80px 0;
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        h4 {
+            color: #fff;
+            font-size: 20px;
+            padding-bottom: 15px;
+        }
+
+        p {
+            color: $color_secondary_heading;
+            font-size: 14px;
+            padding-bottom: 15px;
+            line-height: 1.8;
+            letter-spacing: .5px;
+        }
+
+
+
+        li {
+            list-style: none;
+            padding-bottom: 10px;
+            font-size: 14px;
+            color: $color_secondary_heading;
+
+            a {
+                text-decoration: none;
+                color: $color_secondary_heading;
+            }
+
+        }
+
+        .col1 {
+            .footer_log {
+                height: 80px;
+            }
+        }
+
+        .col4 {
+            .newsletter {
+                display: flex;
+                align-items: center;
+
+                input {
+                    border: none;
+                    outline: none;
+                    border-radius: 20px;
+                    padding: 10px 40px;
+                    position: relative;
+
+                }
+
+                .send_icon {
+                    cursor: pointer;
+                    margin-left: 210px;
+                    position: absolute;
+                    font-size: 30px;
+                    color: $color_primary
+                }
+            }
+        }
+    }
+}

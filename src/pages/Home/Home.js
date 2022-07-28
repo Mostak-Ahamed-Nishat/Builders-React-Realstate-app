@@ -8,6 +8,12 @@ import apartment2 from "../../images/apartment2.webp";
 import apartment3 from "../../images/apartment3.webp";
 import review1 from "../../images/review1.webp";
 import review2 from "../../images/review2.webp";
+import blogSM1 from "../../images/blogSM1.webp";
+import blogSM2 from "../../images/blogSM2.webp";
+import blogSM3 from "../../images/blogSM3.webp";
+import blogBG from "../../images/blogBG.webp";
+import { BiCommentDetail } from "react-icons/bi";
+import { BsHeart } from "react-icons/bs";
 import {
   AiOutlineBgColors,
   AiOutlineForm,
@@ -21,6 +27,9 @@ import {
 import ApartmentCard from "../../components/ApartmentCard";
 import ButtonNonBg from "../../components/ButtonNonBg";
 import Review from "../../components/Review";
+import BlogSmall from "../../components/BlogSmall";
+import Underline from "../../components/Underline";
+import Footer from "../../components/Footer";
 
 function Home() {
   return (
@@ -143,6 +152,7 @@ function Home() {
           <div className="apartment_head">
             <h2>
               Provide The <br /> Beautiful Apartment
+              <Underline />
             </h2>
           </div>
           <ButtonNonBg color="#cfb578" />
@@ -195,6 +205,7 @@ function Home() {
         <div className="container">
           <h2 className="review_title">
             Our Happy Customer Says <br /> About us
+            <Underline />
           </h2>
 
           <div className="review_wrapper">
@@ -224,7 +235,62 @@ function Home() {
       </section>
       {/* section read out blog */}
 
-      <section className="section_blog"></section>
+      <section className="section_blog ">
+        <h2 className="bb_title container">
+          Read Latest News <br /> From Our Blog
+          <Underline />
+        </h2>
+
+        <div className="container blog">
+          <div className="blog_left">
+            <div className="blog_left_content">
+              <img src={blogBG} alt="Builders blog img" />
+              <div className="blog_left_textBox">
+                <p className="bbg_type">
+                  APARMENT <span>/ July 28,2022</span>
+                </p>
+                <h2 className="bbg_subtitle">
+                  Doee lights without darkness that said <br /> good deep years
+                  very.
+                </h2>
+                <div className="comment">
+                  <BiCommentDetail className="bb_icon" />
+                  <p className="bb_icon_text">2 comment</p>
+                  <BsHeart className="bb_icon" />
+                  <p className="bb_icon_text">8 like</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="blog_right">
+            <BlogSmall
+              img={blogSM1}
+              type="Home"
+              title={"Green very from for rule stars season"}
+              date={"Mar 12"}
+              like={0}
+            />
+            <BlogSmall
+              img={blogSM2}
+              type="apartment"
+              title={"Moveth wherein subdue of brought"}
+              date={"June 05"}
+              like={0}
+            />
+            <BlogSmall
+              img={blogSM3}
+              type="Home"
+              title={"Firmament heaven can't him night rule"}
+              date={"Mar 12"}
+              like={0}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* section footer*/}
+
+      <Footer />
     </>
   );
 }
