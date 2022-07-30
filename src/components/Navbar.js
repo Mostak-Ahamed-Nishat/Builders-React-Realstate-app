@@ -5,7 +5,7 @@ import "../scss/UiComponents/_navbar.scss";
 function Navbar({ classes }) {
   return (
     <>
-      <div className="section_navbar">
+      <div className={`section_navbar ${classes}`}>
         <div className="container">
           <div className="navbar">
             <div className="navbar_logo">
